@@ -1,0 +1,75 @@
+* {
+	color: #2F3338;
+	background-color: #EFF0F1;
+}
+
+pre {
+  font-family: 'Inconsolata';
+  font-size: large;
+}
+
+a:link {
+	color: inherit;
+	text-decoration: none !important;
+}
+a:visited {
+	color: inherit;
+	text-decoration: none !important;
+}
+a:active {
+	color: inherit;
+	text-decoration: none;
+}
+a:hover {
+	color: #3DAEE9;
+	text-decoration: none;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #656970;
+}
+
+.header {
+  margin-bottom: 0;
+}
+.content {
+  margin-top: 0;
+}
+.footer {
+  vertical-align: bottom;
+  margin-bottom: 0;
+}
+
+@keyframes wind {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(20deg);}
+}
+
+.leaf {
+    transform: rotate(2deg);
+    transform-origin: 0% 0%;
+    position: relative;
+    top: -8pt;
+    left: 50pt;
+    background: none;
+    animation-name: wind;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tilt {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(0.01deg);}
+}
+.stalk {
+    transform: rotate(0deg);
+    transform-origin: 0% 0%;
+
+    animation-name: wind;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
