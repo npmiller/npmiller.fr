@@ -1,4 +1,4 @@
-* {
+body {
 	color: #2F3338;
 	background-color: #EFF0F1;
 }
@@ -10,11 +10,11 @@ pre {
 
 a:link {
 	color: inherit;
-	text-decoration: none !important;
+	text-decoration: none;
 }
 a:visited {
 	color: inherit;
-	text-decoration: none !important;
+	text-decoration: none;
 }
 a:active {
 	color: inherit;
@@ -59,3 +59,37 @@ a:hover {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+
+.article {
+  margin: 0 auto;
+  max-width: 45em;
+}
+
+.article p a {
+  text-decoration: underline;
+}
+
+.console {
+  overflow-x: auto;
+  padding: 1rem;
+  background-color: #dcdedf;
+}
+
+/* Syntax Highlighting for code */
+div.sourceCode {
+  overflow-x: auto;
+  padding: 1rem;
+  background-color: #dcdedf;
+}
+pre.sourceCode {
+  margin: 0;
+  padding: 0;
+}
+code span.co { color: #898887; } /* Comment */
+code span.dt { color: #0a79c3; } /* Type */
+code span.at { color: #878842; } /* Attribute */
+code span.cf { color: #1f1c1b; font-weight: bold; } /* ControlFlow */
+code span.dv { color: #b42b2b; } /* DecVal */
+code span.pp { color: #da4453; } /* Preprocessor */
+code span.st { color: #005523; } /* String */
+code span.sc { color: #3daee9; } /* SpecialChar */
