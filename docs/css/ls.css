@@ -1,11 +1,56 @@
 body {
 	color: #2F3338;
 	background-color: #EFF0F1;
+  margin-left: 4em;
+  margin-right: 4em;
+  font-family: sans-serif;
 }
 
-pre {
-  font-family: 'Inconsolata';
-  font-size: large;
+.top {
+  background-image: url('../res/header.svg');
+  background-repeat: no-repeat;
+  background-size: 4em 2em;
+  padding-left: 1em;
+  padding-top: 0.4em;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  position: relative;
+  background-position: 0 0.3em;
+}
+
+.mid {
+  background-image: url('../res/mid.svg');
+  background-repeat: no-repeat;
+  background-size: 4em 2em;
+  padding-left: 2.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  display: block;
+}
+
+.bot {
+  background-image: url('../res/bot.svg');
+  background-repeat: no-repeat;
+  background-size: 4em 2em;
+  padding-left: 2.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  display: block;
+}
+
+footer {
+  margin-top: 2em;
+}
+
+summary::marker {
+  content: "";
+}
+
+details > div {
+  margin-left: 2em;
+}
+details > a {
+  margin-left: 2em;
 }
 
 a:link {
@@ -25,22 +70,11 @@ a:hover {
 	text-decoration: none;
 }
 
-.disabled {
-  pointer-events: none;
-  cursor: default;
-  color: #656970;
-}
-
-.header {
-  margin-bottom: 0;
-}
-.content {
-  margin-top: 0;
-}
-.footer {
-  vertical-align: bottom;
-  margin-bottom: 0;
-}
+/* .disabled { */
+/*   pointer-events: none; */
+/*   cursor: default; */
+/*   color: #656970; */
+/* } */
 
 @keyframes wind {
     from { transform: rotate(0deg);}
@@ -50,9 +84,9 @@ a:hover {
 .leaf {
     transform: rotate(2deg);
     transform-origin: 0% 0%;
-    position: relative;
-    top: -8pt;
-    left: 50pt;
+    position: absolute;
+    top: 2.2em;
+    left: 1.8em;
     background: none;
     animation-name: wind;
     animation-duration: 4s;
