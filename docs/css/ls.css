@@ -68,6 +68,7 @@ a:active {
 a:hover {
 	color: #3DAEE9;
 	text-decoration: none;
+  cursor: pointer;
 }
 
 /* .disabled { */
